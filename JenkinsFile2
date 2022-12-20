@@ -10,7 +10,7 @@ stages {
 stage('Deneme'){
     steps{
         echo 'selam'
-        git branch: 'main', url: 'https://github.com/SerhatSipahi/SerhatFirstRepo'
+
     }
     
 }
