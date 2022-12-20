@@ -3,7 +3,10 @@ pipeline
 
 {
 
+
 agent any
+
+git branch: 'main', url: 'https://github.com/SerhatSipahi/SerhatFirstRepo'
 
 stages {
 
@@ -21,8 +24,10 @@ stage('Deneme'){
     {
         always
         {
-             mail to: serhatsipahi@aol.com, subject: ‘The Pipeline success :(‘
+             emailext body: 'test', subject: 'jenkins test', to: 'serhatsipahi@aol.com'
+
         }
     }
+
 
 }
