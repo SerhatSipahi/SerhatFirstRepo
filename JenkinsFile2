@@ -17,7 +17,12 @@ stage('Deneme'){
 
 
 }
-
-          emailext body: 'deneme', subject: 'deneme', to: 'serhatsipahi@aol.com'
+ post
+    {
+        always
+        {
+             mail to: team@example.com, subject: ‘The Pipeline success :(‘
+        }
+    }
 
 }
