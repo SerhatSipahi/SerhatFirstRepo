@@ -6,17 +6,26 @@ stages {
 
 stage('Build')
 {
+steps
+}
 bat "mvn clean"
+}
 }
 
 stage('Deploy')
 {
+steps
+{
 echo 'deploying the code'
+}
 }
 
 stage('Test')
 {
+steps
+{
 bat "mvn test"
+}
 }
 
 stage('Unit Testing')
@@ -26,7 +35,9 @@ bat "mvn compile"
 
 stage('Release')
 {
+steps
+{
 echo 'Project Released'
 }
-
+}
 }
