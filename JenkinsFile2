@@ -4,39 +4,33 @@ agent any
 
 stages {
 
-stage('Build')
-{
-steps
-}
+stage('Build'){
+steps{
 sh "mvn clean"
 }
 }
 
 stage('Deploy')
 {
-steps
-{
+steps{
 echo 'deploying the code'
 }
 }
-
-stage('Test')
-{
-steps
-{
+stage('Test'){
+steps{
 sh "mvn test"
 }
 }
 
-stage('Unit Testing')
-{
+stage('Unit Testing'){
+steps{
 sh "mvn compile"
+}
 }
 
 stage('Release')
 {
-steps
-{
+steps{
 echo 'Project Released'
 }
 }
