@@ -18,7 +18,7 @@ steps
 
 {
 
-bat "mvn clean"
+echo 'selam'
 
 }
 
@@ -46,15 +46,13 @@ stage('test')
 
 steps{
 
-bat "mvn test"
+echo 'selam2'
 
 }
 
 
 
 }
-
-
 
 stage('Unit Testing')
 
@@ -62,7 +60,7 @@ stage('Unit Testing')
 
 steps{
 
-bat "mvn compile"
+echo 'selam3'
 
 }
 
@@ -85,11 +83,6 @@ echo 'releasing the project'
 
 
 }
-
-
-
-
-
 
 
 }
