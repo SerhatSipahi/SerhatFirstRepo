@@ -21,7 +21,7 @@ stage('Deneme'){
     {
         always
         {
-             mail to: team@example.com, subject: ‘The Pipeline success :(‘
+             mail to: serhatsipahi@aol.com, subject: ‘The Pipeline success :(‘
         }
     }
 
