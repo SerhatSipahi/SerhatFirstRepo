@@ -22,7 +22,7 @@ stage('Deneme'){
     {
         always
         {
-            emailtext body: 'test', subject: 'jenkins test', to: 'utkubarancavus@icloud.com'
+            emailext body: 'deneme', subject: 'deneme', to: 'utkubarancavus@icloud.com'
         }
     }
 
