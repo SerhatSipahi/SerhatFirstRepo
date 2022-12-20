@@ -1,92 +1,24 @@
 pipeline
 
+
 {
 
 agent any
 
+stages {
 
-
-stages
-
-{
-
-stage('Build')
-
-{
-
-steps
-
-{
-
-echo 'selam'
-
+stage('Deneme'){
+    steps{
+        echo 'selam'
+        git branch: 'main', url: 'https://github.com/SerhatSipahi/SerhatFirstRepo'
+    }
+    
 }
 
 
 
-}
-
-stage('deploy')
-
-{
-
-steps{
-
-echo 'deploying the code'
-
-}
 
 
 
 }
-
-stage('test')
-
-{
-
-steps{
-
-echo 'selam2'
-
-}
-
-
-
-}
-
-stage('Unit Testing')
-
-{
-
-steps{
-
-echo 'selam3'
-
-}
-
-
-
-}
-
-stage('Release')
-
-{
-
-
-
-steps{
-
-echo 'releasing the project'
-
-}
-
-
-
-}
-
-
-}
-
-
-
 }
